@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #111;
+    padding: 20px;
+}
+
+#box {
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+    border-radius: 20px;
+    position: absolute;
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes anime {
+    from {
+        left: 0;
+        rotate: 0deg;
+        background-color: crimson;
+    }
+
+    to {
+        left: 70%;
+        rotate: 360deg;
+        background-color: aqua;
+    }
+}
+h1 {
+    color: white;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Gilroy', sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+h1::after {
+    content: ' Dwivedi';
+}
+
+h1::before {
+    content: 'Mr.';
+}
