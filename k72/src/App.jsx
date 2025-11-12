@@ -13,14 +13,14 @@ function App() {
   return (
     <>
       <div className='text-white'>
-        {/* <Navbar /> */}
+        <Navbar />
         <FullScreenNav />
-        {/* <Routes>
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/agencies" element={<Agency />} />
           <Route path="/works" element={<Work />} />
           <Route path="/projects" element={<Projects />} />
-        </Routes> */}
+        </Routes>
       </div>
     </>
   )

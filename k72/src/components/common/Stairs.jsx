@@ -6,9 +6,11 @@ import { useLocation } from 'react-router-dom'
 export default function Stairs(props) {
 
     const currentPath = useLocation().pathname
-    // console.log(currentPath)
+
+    
     const stairParentRef = useRef(null)
     const pageRef = useRef(null)
+
     useGSAP(function () {
         const tl = gsap.timeline()
 
@@ -40,8 +42,8 @@ export default function Stairs(props) {
             scale: 1.2
         })
     }, [currentPath])
-    // console.log(props.children)
-    console.log(pageRef.current)
+
+    
     return (
         <>
             <div ref={stairParentRef} className='h-screen w-full fixed z-20 top-0'>
